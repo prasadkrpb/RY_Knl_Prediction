@@ -44,7 +44,7 @@ st.subheader("📄 Variance Inflation Factor (VIF) Table")
 st.dataframe(vif_table.style.format({"VIF": "{:.2f}"}))
 
 # Prediction Section
-st.subheader("🌱 Choose and Enter Climate Parameters for Prediction")
+st.subheader("🌱 Choose Model and Enter Climate Parameters for Prediction")
 selected_model_name = st.selectbox("Select Model", ["Random Forest", "XGBoost"], index=1)
 model = rf_model if selected_model_name == "Random Forest" else xgb_model
 
